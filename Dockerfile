@@ -81,7 +81,8 @@ RUN cd /tmp && \
     cp qemu-rpi-kernel-*/versatile-pb.dtb /root/qemu-rpi-kernel/ && \
     rm -rf /tmp/*
 
-RUN apk add mtools
+# ignored in busybox
+# RUN apk add mtools
 
 VOLUME /sdcard
 
