@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Build dockerpi:vm
-        run: docker build -t leonietzsche/dockerpi:vm --target dockerpi-vm .
+        run: docker build -t leonietzsche/dockerpi:vm-busybox --target dockerpi-vm .
       - name: Build dockerpi
         run: docker build -t leonietzsche/dockerpi:latest --target dockerpi .
       - name: Log image data
